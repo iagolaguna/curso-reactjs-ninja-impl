@@ -6,11 +6,9 @@ const Title = (props) => (
     <h1>Olá {`${props.name} ${props.lastname}`}</h1>
 )
 
-Title.getDefaultProps = () => {
-    return {
+Title.defaultProps =  {
         name: 'Desconhecido',
-        lastname: 'Sem sobrnome'
-    }
+        lastname: 'Sem sobrenome'
 }
 
 
